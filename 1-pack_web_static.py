@@ -2,10 +2,10 @@
 """ This module contains the function do_pack that generates a .tgz archive
     from the contents of the web_static folder (fabric script) """
 import warnings
-
-warnings.filterwarnings(action='ignore', category=DeprecationWarning)
 from fabric.api import local
 from datetime import datetime
+warnings.filterwarnings(action='ignore', category=DeprecationWarning)
+
 
 def do_pack():
     """ Fabric script that generates a .tgz archive from the contents of the
