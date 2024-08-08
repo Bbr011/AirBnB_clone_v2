@@ -3,7 +3,7 @@
 import os
 from fabric.api import env, local, run, lcd, cd
 
-env.hosts = ["18.234.249.140", "3.80.18.45"]
+env.hosts = ["54.90.3.135", "100.26.211.122"]
 
 def do_clean(number=0):
     """Delete out-of-date archives.
