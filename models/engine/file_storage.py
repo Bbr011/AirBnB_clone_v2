@@ -46,6 +46,10 @@ class FileStorage:
             if key in FileStorage.__objects:
                 del FileStorage.__objects[key]
 
+    def close(self):
+        """calls reload() for deserializing the JSON file to objects"""
+        self.reload()
+
     def classes(self):
         """classes method returns dictionary of valid classes and their reference"""
         from models.base_model import BaseModel
